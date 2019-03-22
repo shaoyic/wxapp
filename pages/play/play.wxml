@@ -1,0 +1,19 @@
+<!--pages/play/play.wxml-->
+<view class='num-item'>
+  <text>第{{question_num}}关</text>
+</view>
+<view class='title-item'>
+  <text>{{question}}</text>
+</view>
+
+<!--答案框-->
+<view class='answer-box'>
+  <text wx:for="{{answer_array}}"  wx:key data-key='{{item.key}}' data-index='{{index}}' bindtap='push'>{{item.val}}</text>
+</view>
+<!--提示框-->
+<view  class='tishi-box'>
+  <block wx:for="{{tishi}}" wx:key>
+    <text wx:if="{{index == tishi_keys[index]}}" bindtap='pull' data-id="{{index}}" data-title='{{item}}' style='visibility:inline-block;' >{{item}}</text>
+    <text wx:else bindtap='pull' data-id="{{index}}" style='visibility:hidden;' >{{item}}</text>
+  </block>
+</view>

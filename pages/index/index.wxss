@@ -1,0 +1,432 @@
+/**index.wxss**/
+@charset "utf-8";
+page{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.index-show-box-body {
+	width: 100%;
+	height: 100%;
+	background: #C1523E url("https://qqpublic.qpic.cn/qq_public/0/0-3008817774-58118648F871C29B1E892969CA853261/0?fmt=png&size=25&rs=0-0&h=490&w=720&ppv=1") no-repeat;
+	background-size: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+.red-packet-container .top-box .cont-head-portrait {
+	margin: 0 auto;
+	padding-top: 30rpx;
+	width: 100%;
+	border-radius: 8px;
+	line-height: 0;
+	text-align: center
+}
+
+.red-packet-container .top-box .cont-head-portrait image {
+	width: 160rpx;
+	height: 140rpx;
+}
+
+.red-packet-container .top-box .cont-desc-blessing {
+	margin-top: 30rpx;
+	text-align: center
+}
+
+.red-packet-container .top-box .cont-desc-blessing > view {
+  height: 60rpx;
+  line-height: 60rpx;
+	font-size: 32rpx;
+	color: #FFE7C0;
+	vertical-align: middle
+}
+
+.red-packet-container .top-box .icon-prompt {
+    display: inline-block;
+    width: 126rpx;
+    height: 52rpx;
+    background: url('https://qqpublic.qpic.cn/qq_public/0/0-3114134172-630E65DD819BE7CFA1AEC277C136521C/0?fmt=png&size=0&rs=0-0&h=52&w=126&ppv=1') no-repeat;
+    background-size: 100%;
+    margin-left: 10rpx;
+    vertical-align: middle;
+    color: #D85940;
+    font-size: 28rpx;
+    text-align: center;
+    line-height: 52rpx;
+}
+
+.red-packet-container .btn-open-red-packet {
+	position: absolute;
+	width: 220rpx;
+	height: 220rpx;
+	background: url("https://qqpublic.qpic.cn/qq_public/0/0-2609803129-A7C715F1DEBF38E0563CD5CD221C0680/0?fmt=png&size=15&rs=0-0&h=240&w=240&ppv=1") no-repeat 0 0/100% 100%;
+	background-size: 100%;
+	top: 380rpx;
+	left: 35%;
+	text-align: center;
+	line-height: 220rpx;
+	font-weight: 700;
+	color: #000;
+	font-size: 80rpx;
+	border-radius: 1000px;
+}
+
+.red-packet-container .btn-open-red-packet .open{
+  display: inline-block;
+	animation: open 0.6s linear 3;
+}
+@keyframes open {
+	to {
+		transform: rotateY(180deg);
+	}
+
+	from {
+		transform: rotateY(360deg);
+	}
+}
+
+.red-packet-container .top-box .cont-desc-bottom {
+	font-size: 30rpx;
+	color: #F2BD91;
+	margin-top: 310rpx;
+	text-align: center
+}
+
+.red-packet-container .list {
+	margin: 40rpx auto;
+	width: 90%;
+	background: #AF4C3A;
+	border-radius: 8px;
+	box-sizing: border-box;
+	border: 1px solid #AB4F3F;
+  height: 720rpx;
+}
+.red-packet-container .list .list-item {
+  height: 120rpx;
+  overflow: hidden;
+}
+
+.red-packet-container .list .list-item > view{
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+	-webkit-box-pack: justify;
+	-webkit-box-align: center;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+  overflow: hidden;
+  height: 120rpx;
+}
+
+.red-packet-container .list .list-item .left-first{
+  position: relative;
+  left: 0;
+  bottom: -120rpx;
+  animation:mymove 3s infinite;
+}
+@-webkit-keyframes mymove {
+	from {
+		bottom: -120rpx;
+	}
+
+	to {
+		bottom: 0;
+	}
+}
+
+.red-packet-container .list-item-left image {
+	width: 90rpx;
+	height: 90rpx;
+	border-radius: 1000px;
+  float: left;
+}
+
+.red-packet-container .list-item-left .item-info {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+	padding-left: 20rpx;
+	overflow: hidden;
+  max-width: 300rpx;
+}
+
+.red-packet-container .list-item-left .item-info-name {
+	font-size: 28rpx;
+	width: 100%;
+	color: #fff
+}
+
+.red-packet-container .list-item-left .item-info-time {
+	width: 100%;
+	font-size: 28rpx;
+	color: #fff
+}
+
+.red-packet-container .list-item-right {
+	font-size: 28rpx;
+	text-align: right;
+	color: #fff;
+}
+
+.red-packet-container .list-item-right text {
+	color: #F4D597
+}
+
+
+
+/*第二个页面*/
+.award-body {
+	width: 100%;
+	height: 100%;
+	background: #F0EFF3
+}
+.award-container {
+	width: 100%;
+	background: url("https://qqpublic.qpic.cn/qq_public/0/0-2189116127-E5E268DA20D661DF3240A5E66EB43DD2/0?fmt=png&size=20&rs=0-0&h=248&w=720&ppv=1") no-repeat;
+	background-size: 100%;
+	position: relative
+}
+.award-container::before {
+	content: '';
+	position: absolute;
+	width: 220rpx;
+	height: 220rpx;
+	background: url("https://qqpublic.qpic.cn/qq_public/0/0-2990761782-EFFD7CC217816983330C9C365C51F4E0/0?fmt=png&size=8&rs=0-0&h=140&w=140&ppv=1") no-repeat;
+	background-size: 100%;
+	top: 110rpx;
+	left: 35%;
+}
+.content-top-tips {
+	width: 100%;
+	color: #3A5285;
+	font-size: 36rpx;
+	padding-top: 350rpx;
+	text-align: center
+}
+
+.content-price {
+	color: #000;
+	margin-top: 30rpx;
+	text-align: center;
+	font-weight: 700;
+	height: 200rpx;
+	vertical-align: top;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.content-price .sub {
+  display: inline-block;
+  height: 200rpx;
+  line-height: 150rpx;
+	font-size: 36rpx;
+  width: 40%;
+  text-align: right
+}
+.content-price .js_money {
+  flex: 1;
+  display: inline-block;
+  height: 200rpx;
+  line-height: 200rpx;
+  	font-size: 100rpx;
+}
+.content-price .hight-money{
+  width: 40%;
+  text-align: left;
+}
+
+.content-price .icon-highest {
+	display: inline-block;
+	margin-left: 10px;
+	width: 106rpx;
+	height: 52rpx;
+	background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGoAAAA0CAYAAABipa0QAAAAAXNSR0IArs4c6QAAAw5JREFUeAHtnD1oU1EUx8+98SMQCh1UHIROrWKlo4siJkHFLupQsalKRCcH0cFJoYLdFEdxcHEwQ0WRQHGRikvRxUUKTSJ2cdKAioPmo/d4E2hBovG83Bc4tP9CSEnOPfef368v7zbhXUMx/nw4d3THimtMs+Nx33aXv22Ksf26b2WMccz82d+/tpvp9vCjV4urL9qs/hJ6v5RLnzDED5lpW2gvjCcyZGpe2M2RwvzdFo9YRFWmsnudc++YeCsgx0zA2NN7CvNPYhFVyqXf+kN2f8wR0c4TMIaqSUqNBIvy56V9zWb9Paj2j4CxlLeh7VdcfTS0B8Z3J8BkRoNFkbMD3afBs8EEmAfCRQWnQAMJAYiSUFJQA1EKJEgiQJSEkoIaiFIgQRIBoiSUFNRAlAIJkggQJaGkoAaiFEiQRIAoCSUFNRClQIIkAkRJKCmogSgFEiQRIEpCSUENRCmQIIkAURJKCmogSoEESQSIklBSUANRCiRIIkCUhJKCGohSIEESAaIklBTUQJQCCZIIECWhpKAGohRIkEQIFmXIJSQToSaMQJCoci5ziA3NhEXAaAmBnkWVJjOXHLmXuHBNgjm8JvKlmzw7kSg9r95jdleIwwOgg4xApOujlvMnB+u1b7PezxFZe1TFQsDQA/ER9fFsenet9r3oJx6JZXI0iURAdI6q5NLHGo7fEDEkRcIbX/F/RS1NZa46pjm/aBiMb1p0ikrgn299fGtiS7lcvc/OXcSaISrW+Ov/Kqpy4fj2cvnLM38UHYx/SnTshUCHqKXz2bGV2q+iX3oP9dIQY/pD4I9zVGkqc4qaboGYIak/vHvuuiaqPHn4Bjn31EtK9dwNA/tGoC2qvbIjmvGLhkj/APctFRp3ELDL+fGd/ki60/EMHtBDwJgftlH7ecAn6lhU6EmJJH7XtkXrv03C90mK/xbam1ZxqmgTnFzwZ6aG4qwbOhqTvTxUmPtqhx+/+OQ38Jve0DQUvvjWxorW2Outvfpa8dZWeaVc9gyRu+Y/eB3zn0gkFWZf95G6bVX6G0hWuNLpZrLdAAAAAElFTkSuQmCC") no-repeat;
+	background-size: 100%;
+	font-size: 28rpx;
+	color: #fff;
+	font-style: normal;
+	text-align: center;
+	line-height: 52rpx;
+	padding-left: 20rpx;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	letter-spacing: 1px;
+	vertical-align: top;
+	margin-top: 70rpx;
+}
+
+.award-container .content-charge-box {
+	width: 70%;
+	margin: 80rpx auto 10rpx;
+	background: #fff;
+	padding: 10rpx 20rpx 10rpx;
+	border-radius: 8px
+}
+
+.charge-btn {
+	display: block;
+	margin: 0 auto;
+	width:  100%;
+	height: 120rpx;
+	line-height: 120rpx;
+	color: #fff;
+	background: #18AD19;
+	text-align: center;
+	font-size: 46rpx;
+	border-radius: 8px;
+}
+
+.charge-tips {
+	text-align: center;
+	font-size: 24rpx;
+  margin-top: 36rpx;
+	color: #3A5285;
+}
+.charge-tips2 {
+	text-align: center;
+	font-size: 24rpx;
+	color: red;
+  margin-bottom: 50rpx;
+}
+
+.content-tips-total {
+	width: 100%;
+	text-align: center;
+	font-size: 24rpx;
+	color: #9B9B9B
+}
+
+.red-packet-container .top-box .cont-head-portrait img {
+	font-size: 10rpx;
+	border: 0;
+	border-radius: inherit
+}
+
+/*领取页面*/
+#zhezhao{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+#zhezhao .sh-case0{
+  width: 80%;
+  height: 600rpx;
+  margin: 30% auto;
+  padding: 0;
+  position: relative;
+}
+#zhezhao .sh-case0 .money-item{
+  position: absolute;
+  left: 326rpx;
+  top: 28rpx;
+  color: red;
+  font-size: 40rpx;
+}
+#zhezhao .sh-case0 .date-item{
+  position: absolute;
+  left: 317rpx;
+  top: 329rpx;
+  color: black;
+  font-size: 28rpx;
+}
+
+#zhezhao .sh-case1{
+  width: 80%;
+  height: 600rpx;
+  margin: 30% auto;
+  padding: 0;
+}
+
+#zhezhao .sh-case2{
+  width: 80%;
+  height: 600rpx;
+  margin: 30% auto;
+  padding: 0;
+}
+
+#zhezhao .sh-case3{
+  width: 80%;
+  height: 600rpx;
+  margin: 30% auto;
+  padding: 0;
+}
+
+#zhezhao .sh-case4{
+  width: 80%;
+  height: 600rpx;
+  margin: 30% auto;
+  padding: 0;
+  position: relative;
+}
+#zhezhao .sh-case4 .money-item{
+  position: absolute;
+  left: 330rpx;
+  top: 153rpx;
+  color: red;
+  font-size: 32rpx;
+}
+
+button::after{
+  border: none;
+}
+
+/**index.wxss**/
+page{
+  height:100%;
+}
+.main-bg{
+  position:absolute;
+  top:0;
+  left:0;
+  bottom: 0;
+  right: 0;
+  /* height:100%;
+  width:100%; */
+  z-index:-1;
+}
+/*4*/
+.box{
+  width: 100%;
+  height: 36px;
+  position: fixed;
+  left: 0;
+  bottom: 50%;
+  z-index: 99;
+  box-sizing: border-box;
+}
+.box navigator{
+  width: 50%;
+  line-height: 36px;
+  text-align: center;
+  margin: 20px auto;
+  border-radius: 18px;
+  background-color: rgb(254,238,83);
+  border-bottom: 3px solid #D66501;
+  font-size: 22px;
+  color: #fff;
+  font-weight: 700;
+}
+.box button{
+  width: 50%;
+  line-height: 36px;
+  text-align: center;
+  margin: 20px auto;
+  border-radius: 18px;
+  background-color: rgb(254,238,83);
+  border-bottom: 3px solid #D66501;
+  font-size: 22px;
+  color: #fff;
+  font-weight: 700;
+}
+

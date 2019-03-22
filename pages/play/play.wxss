@@ -1,0 +1,108 @@
+/* pages/play/play.wxss */
+page{
+  background-color: #F3F4EC;
+}
+/*题目内容*/
+.num-item{
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom:5px;  
+}
+.num-item text{
+  color: #4B6442;
+}
+.title-item{
+  width: 100%;
+  margin-bottom: 5px;
+}
+.title-item text{
+  display: block;
+  width: 50%;
+  margin: auto;
+  background-color: #fff;
+  text-align: center;
+  padding:50px 2%; 
+  font-size: 14px;
+  color: #323232;
+  font-weight: 700;
+}
+.share-item{
+  width:100%;
+  margin-bottom: 15px; 
+}
+.share-item button{
+  padding: 0;
+  width: 30%;
+  background-color: #496942;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.share-img-item{
+  width: 20%;
+  height: 36px;
+  line-height: 36px;
+}
+.share-item image{
+  width: 25px;
+  height: 20px;
+  margin-top: 8px; 
+}
+.share-item text{
+  display: inline-block;
+  width: 75%;
+  font-size: 13px;
+  line-height: 36px;
+  color: #fff;
+}
+/*答案框*/
+.answer-box{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5px; 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+ }
+.answer-box text{
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  border: 2px solid #6F7D66;
+  border-radius: 5px;
+  margin: 0 3px;
+  font-size: 16px;
+  color: #496742;
+  font-weight: 600;
+  text-align: center;
+}
+/*提示框*/
+.tishi-box{
+  width: 126px;
+  margin: auto;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.tishi-box text{
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  border: 2px solid #6F7D66;
+  margin: 0 5px;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #496742;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 5px; 
+}
+#tishi-text{
+  visibility: hidden;
+}

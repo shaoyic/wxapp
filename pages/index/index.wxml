@@ -1,0 +1,87 @@
+
+<view wx:if="{{showindex==1}}">
+<view class='index-show-box-body red-packet-container' wx:if="{{model == 1}}">
+  <view class="top-box">
+      <view class="cont-head-portrait">
+            <image src='{{data[11]}}'></image>  
+      </view>   
+      <view class="cont-desc-blessing">   
+      <view style="font-size: 48rpx;">{{data[0]}}</view>      
+      <view>{{data[1]}}<view class="icon-prompt">{{data[2]}}</view></view>    
+      </view>    
+      <view class="btn-open-red-packet" bindtap='open'><text class='{{open}}'>開</text></view>  
+      <view class="cont-desc-bottom">- {{data[3]}} -</view>  
+  </view>
+  <view class='list'>
+    <view class='list-item'  wx:for="{{persons}}" wx:key>
+      <view wx:if="{{index == 0}}" class='left-first'>
+        <view class="list-item-left">    
+          <image src="{{item.img}}"></image>
+          <view class="item-info">      
+            <view class="item-info-name">{{item.name}}</view>      
+            <view class="item-info-time">{{item.time}}</view>    
+          </view>  
+        </view>  
+        <view class="list-item-right">    {{data[4]}}<text>{{item.money / 100}}</text></view>
+      </view>
+      <view wx:else>
+        <view class="list-item-left">    
+          <image src="{{item.img}}"></image>
+          <view class="item-info">      
+            <view class="item-info-name">{{item.name}}</view>      
+            <view class="item-info-time">{{item.time}}</view>    
+          </view>  
+        </view>  
+        <view class="list-item-right">    {{data[4]}}<text>{{item.money / 100}}</text></view>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+<!--第二个页面-->
+<view class="award-container award-body" style="" wx:if="{{model == 2}}">  
+  <view class="content-top-tips">祝贺收到</view>  
+  <view class="content-price">    
+  <text class='sub'>￥</text> <text class="js_money">{{money / 100}}</text>
+  <view class='hight-money'><text class="icon-highest">最高</text></view>
+  </view>  
+  <view class="content-charge-box">    
+    <view class="charge-btn" bindtap='getMoney'>马上领</view>
+    <view class="charge-tips">{{data[6]}}</view>
+    <view class="charge-tips2">{{data[7]}}</view>
+  </view>  
+  <view class="content-tips-total">{{data[8]}}</view>
+</view>
+
+<!--领取-->
+<view wx:if="{{sh_status}}">
+  <button id='zhezhao' open-type='share' data-num='{{sh_num}}' wx:if="{{sh_num < 4}}">
+    <button open-type='share' class='sh-case0' wx:if="{{sh_num == 0}}" data-num='{{sh_num}}' style='background: url("https://qqpublic.qpic.cn/qq_public/0/0-2977592066-F0A0233820C11CD036516D55B1D10BF2/0?fmt=png&size=277&rs=26-47&h=890&w=960&ppv=1") no-repeat; background-size: 100%;'>
+      <view class='money-item'>{{money / 100}}</view>
+      <view class='date-item'>{{overtime}}</view>
+    </button>
+    <button open-type='share' class='sh-case1' wx:if="{{sh_num == 1}}" data-num='{{sh_num}}'style='background: url("https://qqpublic.qpic.cn/qq_public/0/0-3147150107-4F8D51C9B323AC8590B5265ED838EEC4/0?fmt=png&size=146&rs=0-0&h=540&w=950&ppv=1") no-repeat; background-size: 100%;'></button>
+    <button open-type='share' class='sh-case2' wx:if="{{sh_num == 2}}" data-num='{{sh_num}}'style='background: url("https://qqpublic.qpic.cn/qq_public/0/0-3200178068-A5FC2E9A66595A4E1ACC2A844D09467C/0?fmt=png&size=144&rs=15-27&h=540&w=950&ppv=1") no-repeat; background-size: 100%;'></button>
+    <button open-type='share' class='sh-case3' wx:if="{{sh_num == 3}}" data-num='{{sh_num}}'style='background: url("https://qqpublic.qpic.cn/qq_public/0/0-2473050001-7D25737E9BF489B63E99A7EAC2D5B978/0?fmt=png&size=181&rs=19-34&h=620&w=960&ppv=1") no-repeat; background-size: 100%;'></button>
+  </button>
+  <view id='zhezhao' wx:else bindtap='close'>
+    <view class='sh-case4' style='background: url("https://qqpublic.qpic.cn/qq_public/0/0-3099319440-17E2C1A22F83E4320F41CFB632B89808/0?fmt=png&size=139&rs=19-32&h=671&w=960&ppv=1") no-repeat; background-size: 100%;'>
+      <view class='money-item'>{{money / 100}}</view>
+    </view>
+  </view>
+</view>
+</view>
+
+<view wx:else>
+<!--index.wxml-->
+<image class="main-bg" src="https://qqpublic.qpic.cn/qq_public/0/0-2233005672-B7C5A94DD16732B2E96CF1145C5AF874/0?fmt=jpeg&size=43&rs=27-27&h=888&w=500&ppv=1" style='width:{{screenWidth}}px;height:{{screenHeight}}px;'></image>
+<view class='box'>
+  <navigator url='../play/play'>开始玩</navigator>
+  <button open-type='share'>分享好友</button>
+  <!-- <button bindtap='jump_video'>更多好玩</button> -->
+</view>
+
+
+
+</view>
